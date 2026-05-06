@@ -3,8 +3,8 @@
 
 ## Student Details
 
-* Name: Aishwarya C
-* Register Number: RA2311003050082
+* Name: Shanmugapriya K
+* Register Number: RA2311003050200
 * Department: B.Tech CSE
 * Institution: SRM Institute of Science and Technology, Tiruchirapalli
 
