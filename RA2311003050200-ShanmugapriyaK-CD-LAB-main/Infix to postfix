@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <ctype.h>
+
+char stack[20];
+int top = -1;
+
+void push(char c) { stack[++top] = c; }
+char pop() { return stack[top--]; }
+
+int priority(char c) {
+    if(c=='+'||c=='-') return 1;
+    if(c=='*'||c=='/') return 2;
+    return 0;
+}
+
+int main() {
+    char exp[20];
+    printf("Enter expression: ");
+    scanf("%s", exp);
+
+    for(int i=0; exp[i]; i++) {
+        if(isalnum(exp[i]))
+            printf("%c", exp[i]);
+        else {
+            while(top!=-1 && priority(stack[top])>=priority(exp[i]))
+                printf("%c", pop());
+            push(exp[i]);
+        }
+    }
+    while(top!=-1)
+        printf("%c", pop());
+}

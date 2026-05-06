@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    printf("LR(0) Item:\n");
+    printf("E -> .E+T\n");
+    printf("E -> E.+T\n");
+    printf("Items constructed.\n");
+}

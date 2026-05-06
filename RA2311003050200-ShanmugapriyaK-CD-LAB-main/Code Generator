@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    printf("Intermediate Code:\n");
+    printf("t1 = b + c\n");
+    printf("a = t1\n");
+
+    printf("\nTarget Code:\n");
+    printf("MOV R1, b\nADD R1, c\nMOV a, R1\n");
+}

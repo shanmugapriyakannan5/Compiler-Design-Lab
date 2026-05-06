@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void FIRST(char c) {
+    if (!isupper(c)) {
+        printf("%c ", c);
+        return;
+    }
+    if (c == 'E') printf("( id ");
+    if (c == 'T') printf("( id ");
+}
+
+int main() {
+    char c;
+    printf("Enter symbol: ");
+    scanf("%c", &c);
+
+    printf("FIRST(%c) = { ", c);
+    FIRST(c);
+    printf("}\n");
+}

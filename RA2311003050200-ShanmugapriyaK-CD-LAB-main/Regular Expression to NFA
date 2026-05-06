@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    char re[20];
+    printf("Enter RE (a|b): ");
+    scanf("%s", re);
+
+    printf("\nNFA Transitions:\n");
+    printf("q0 --%c--> q1\n", re[0]);
+    printf("q0 --%c--> q2\n", re[2]);
+    printf("q1, q2 -> Final State\n");
+}

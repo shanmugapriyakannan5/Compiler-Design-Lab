@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char lhs, alpha[10], beta[10];
+
+    printf("Enter production A->Aa|b\n");
+    scanf("%c->%[^|]|%s", &lhs, alpha, beta);
+
+    printf("\nAfter removing Left Recursion:\n");
+    printf("%c -> %s%c'\n", lhs, beta, lhs);
+    printf("%c' -> %s%c' | e\n", lhs, alpha+1, lhs);
+}

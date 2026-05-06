@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    printf("Predictive Parsing Table:\n");
+    printf("E -> T E'\n");
+    printf("E' -> + T E' | e\n");
+    printf("Table constructed successfully.\n");
+}

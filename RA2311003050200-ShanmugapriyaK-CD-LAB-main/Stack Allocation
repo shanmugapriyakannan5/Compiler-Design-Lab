@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int stack[5], top = -1, choice, val;
+
+    do {
+        printf("\n1.Push 2.Pop 3.Exit\n");
+        scanf("%d", &choice);
+
+        switch(choice) {
+            case 1:
+                printf("Enter value: ");
+                scanf("%d", &val);
+                stack[++top] = val;
+                break;
+            case 2:
+                if(top==-1) printf("Underflow\n");
+                else printf("Popped: %d\n", stack[top--]);
+                break;
+        }
+    } while(choice != 3);
+}

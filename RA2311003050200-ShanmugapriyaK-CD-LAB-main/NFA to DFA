@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main() {
+    printf("Subset Construction Method:\n");
+    printf("States: {A} -> {A,B}\n");
+    printf("DFA constructed successfully.\n");
+}

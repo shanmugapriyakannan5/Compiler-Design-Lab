@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    printf("Live Variable Analysis:\n");
+    printf("IN[n] = USE[n] U (OUT[n] - DEF[n])\n");
+}

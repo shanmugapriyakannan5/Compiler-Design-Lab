@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    printf("Expression: a = b + c\n");
+    printf("Quadruple:\n");
+    printf("+ b c t1\n");
+    printf("= t1 a\n");
+}

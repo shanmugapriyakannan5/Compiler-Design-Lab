@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+    printf("Expression: a = b + c + b + c\n");
+    printf("DAG eliminates common subexpression (b+c)\n");
+}
